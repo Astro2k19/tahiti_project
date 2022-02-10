@@ -1,0 +1,120 @@
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+        @media(max-width: 930px) {
+            align-items: center;
+        }
+    }
+    &__nav {
+        @media(max-width: 930px) {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            padding: 200px 0 0 0;
+            background-color: #fff;
+            transition: top 0.5s 0s ease-in-out;
+            overflow: auto;
+        }
+        &.active {
+            top: 0;
+        }
+    }
+    &__nav-list {
+        display: flex;
+        height: 100%;
+        @media(max-width: 930px) {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    &__nav-item {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 30px;
+        border-left: 1px solid #ebeda4;
+        font-size: 18px;
+        text-transform: uppercase;
+        @media(max-width: 930px) {
+            display: block;
+            margin-bottom: 50px;
+            padding: 0;
+            border: none;
+            font-family: 'Gotham-Bold';
+            font-size: 40px;
+        }
+        @media(max-width: 930px) {
+            font-size: 33px;
+        }
+        &:first-child {
+            position: relative;
+            z-index: 2;
+            padding-left: 0;
+            border-left: none;
+        }
+        &:last-child {
+            padding-right: 0;
+            border-right: none;
+        }
+        a {
+            color: $pink;
+        }
+    }
+}
+
+.burger-menu span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    transform: translateY(-50%);
+    background-color: #000;
+    transition: .2s linear;
+}
+
+.burger-menu:after,
+.burger-menu:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: .2s linear;
+}
+
+.burger-menu:after {
+    bottom: 0;
+}
+
+.burger-menu:before {
+    top: 0;
+}
+
+.burger-menu {
+    display: none;
+    @media(max-width: 930px) {
+        position: relative;
+        z-index: 4;
+        display: block;
+        width: 40px;
+        height: 20px;
+    }
+    &.active:after {
+        transform: rotate(-45deg) translateY(50%);
+        bottom: 50%;
+    }
+    &.active:before {
+        transform: rotate(45deg) translateY(-50%);
+        top: 50%;
+    }
+    &.active span {
+        transform: scale(0);
+    }
+}
