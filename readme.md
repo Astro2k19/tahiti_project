@@ -1,16 +1,9 @@
-  WordPress › ReadMe 
+**Link to project** - http://ready-for-feedback3.com/test_tasks/katartem/
+ WordPress › ReadMe 
 
 [![WordPress](wp-admin/images/wordpress-logo.png)](https://wordpress.org/)
 ==========================================================================
 
-Semantic Personal Publishing Platform
-
-First Things First
-------------------
-
-Welcome. WordPress is a very special project to me. Every developer and contributor adds something unique to the mix, and together we create something beautiful that I’m proud to be a part of. Thousands of hours have gone into WordPress, and we’re dedicated to making it better every day. Thank you for making it part of your world.
-
-— Matt Mullenweg
 
 Installation: Famous 5-minute install
 -------------------------------------
