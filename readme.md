@@ -1,5 +1,4 @@
 **Link to project** - http://ready-for-feedback3.com/test_tasks/katartem/
- WordPress › ReadMe 
 
 [![WordPress](wp-admin/images/wordpress-logo.png)](https://wordpress.org/)
 ==========================================================================
